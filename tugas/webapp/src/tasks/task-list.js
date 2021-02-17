@@ -6,7 +6,7 @@ export const TaskList = Vue.extend({
   props: ['tasks'],
   render(crt) {
     const tasklist = this.$props.tasks.map((task) => {
-       crt('div', [
+      return crt('div', [
         crt(
           'a',
           {
